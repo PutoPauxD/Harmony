@@ -11,5 +11,9 @@
   "license": "ISC",
   "devDependencies": {
     "astro": "^4.13.1"
+  },
+  "dependencies": {
+    "@fontsource/great-vibes": "^5.0.21",
+    "bootstrap": "^5.3.3"
   }
 }

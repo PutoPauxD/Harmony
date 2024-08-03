@@ -1,0 +1,22 @@
+.navbar {
+    transition: width 0.3s ease-in-out;
+  
+    &.open {
+      width: 300px;
+    }
+  
+    &-toggle {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+  
+    &-menu {
+      padding: 20px;
+      color: white;
+    }
+  }
+  

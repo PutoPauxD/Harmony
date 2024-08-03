@@ -1,0 +1,25 @@
+---
+import '../../styles/button.scss'
+import Icon from './icon.atom.astro';
+
+interface ButtonInputOptions {
+  isDisabled?: boolean;
+  isSelected?: boolean;
+}
+interface Props {
+	title: string,
+	options?: ButtonInputOptions,
+	icon?: string; // Prop para el nombre del icono
+}
+
+const { title, options, icon } = Astro.props
+---
+<button
+    class={`button ${options?.isDisabled ? 'disabled' : ''} ${options?.isSelected ? 'selected' : ''}`}
+    disabled={options?.isDisabled}
+  >
+	<div class="button__content">
+		{icon && <Icon name={icon} />}
+		{title}
+	</div>
+</button>

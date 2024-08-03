@@ -1,0 +1,11 @@
+---
+interface IconProps {
+  name: string; // Nombre del icono (por ejemplo, 'search', 'user')
+  size?: number; // Tamaño del icono en píxeles
+  color?: string; // Color del icono
+}
+
+const {name} = Astro.props
+
+---
+  <img src={`assets/icons/${name}`}>

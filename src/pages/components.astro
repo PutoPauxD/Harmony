@@ -1,0 +1,28 @@
+---
+import Button from "../components/atom/button.atom.astro"
+import '../styles/table.scss'
+---
+
+<h1>Componentes de la aplicacion y sus variantes</h1>
+<h2>-Boton</h2>
+
+  <link rel="stylesheet" href="styles.css">
+  
+  <table>
+    <thead>
+      <tr>
+          <th>Default</th>
+          <th>Seleccionado</th>
+          <th>Icono</th>
+          <th>Deshabilitado</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><Button title="Boton"></Button></td>
+            <td><Button title="Boton" options={{isSelected: true}}></Button></td>
+            <td><Button title="Boton" icon="search.svg">Buscar</Button></td>
+            <td><Button title="Boton" options={{isDisabled: true}}></Button></td>
+        </tr>
+    </tbody>
+  </table>
